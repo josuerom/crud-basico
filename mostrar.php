@@ -2,7 +2,7 @@
    require_once('crud_libro.php');
    require_once('libro.php');
 
-   $crud = new CurdLibro();
+   $crud = new CrudLibro();
    $libro = new Libro();
    $listaLibros = $crud -> mostrar();
 ?>
