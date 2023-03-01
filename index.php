@@ -1,10 +1,11 @@
 <html>
 <head>
    <title>Administrar Libro</title>
+   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
    <header>
-      Bienvemido Administrar Libro
+      Bienvenido Administrar Libro
    </header>
    <table border=1>
       <tr>

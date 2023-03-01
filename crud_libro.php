@@ -4,10 +4,13 @@
    class CrudLibro {
       public function __construct() {}
 
-      public function insertar($libro) {
+      public function insertar($libro, $autor, $telefono, $direccion) {
          $db = Db::conectar();
-         $insert = $db->prepare('INSERT INTO libros VALUES(NULL, :nombre)');
+         $insert = $db->prepare('INSERT INTO libros VALUES(NULL, :nombre, :autor, :telefono, :direccion)');
          $insert -> bindValue('nombre', $libro -> getNombre());
+         $insert -> bindValue('autor', $autor -> getAutor());
+         $insert -> bindValue('telefono', $telefono -> getTelefono());
+         $insert -> bindValue('direccion', $direccion -> getDireccion());
          $insert -> execute();
       }
 
