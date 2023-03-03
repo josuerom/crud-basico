@@ -23,6 +23,9 @@
             $myLibro = new Libro();
             $myLibro -> setId($libro['id']);
             $myLibro -> setNombre($libro['nombre']);
+            $myLibro -> setAutor($libro['autor']);
+            $myLibro -> setTelefono($libro['telefono']);
+            $myLibro -> setDireccion($libro['direccion']);
             $listaLibros[] = $myLibro;
          }
          return $listaLibros;
